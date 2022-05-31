@@ -1,9 +1,16 @@
 import './App.css';
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Card from './components/Card'
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <Navbar />
+    <Fragment>
+      <Navbar />
+      <Hero />
+      <Card />
+    </Fragment>
   )
 }
 
