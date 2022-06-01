@@ -1,10 +1,9 @@
 import React from 'react'
-import photo from '../images/photo-grid.png'
 
 export default function Hero() {
     return (
         <section className='section--hero'>
-            <img className='section--hero-img' src={photo} alt='Hero image' />
+            <img className='section--hero-img' src={'./images/photo-grid.png'} alt='Hero image' />
             <h2 className='section--title'>
                 Online Experiences
             </h2>

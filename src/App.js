@@ -8,13 +8,9 @@ import { Fragment } from 'react';
 function App() {
   const cards = data.map(info => {
     return (
-      <Card 
-        title={info.title}
-        price={info.price}
-        coverImg={info.coverImg}
-        rating={info.stats.rating}
-        reviewCount={info.stats.reviewCount}
-        location={info.location}
+      <Card
+        key={info.id}
+        {...info}
       />
     )
   })
@@ -22,7 +18,9 @@ function App() {
     <Fragment>
       <Navbar />
       <Hero />
-      {cards}
+      <section className='card-list'>
+        {cards}
+      </section>
     </Fragment>
   )
 }
